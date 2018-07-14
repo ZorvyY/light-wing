@@ -1,7 +1,7 @@
 //The race manager class, containing logic for 
 //"stepping" the internal state of the race 
 //when given a course object and an array of racers
-export default class RaceManager {
+module.exports = class RaceManager {
   constructor(racers, course) {
   // course is currently an array of tracksegments
   // racers is currently an array of racers

@@ -1,4 +1,4 @@
-import Vec from './Vec.js';
+let Vec = require('./Vec.js');
 
 class TrackSegment {
 
@@ -13,7 +13,7 @@ class TrackSegment {
 
 }
 
-export class StraightSegment /*extends TrackSegment*/ {
+class StraightSegment /*extends TrackSegment*/ {
   constructor(vec1, vec2) {
     //super();
     this.p1 = vec1;
@@ -59,7 +59,7 @@ export class StraightSegment /*extends TrackSegment*/ {
   }
 }
 
-export class CurvedSegment /*extends TrackSegment*/ {
+class CurvedSegment /*extends TrackSegment*/ {
   constructor(centre, radius, startAngle, endAngle) {
     this.centre = centre;
     this.radius = radius;
@@ -127,7 +127,8 @@ export class CurvedSegment /*extends TrackSegment*/ {
   }
 }
 
-
-
-
+module.exports = {
+  CurvedSegment: CurvedSegment,
+  StraightSegment: StraightSegment
+};
 

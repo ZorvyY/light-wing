@@ -1,5 +1,8 @@
-import V from './Vec.js';
-import { StraightSegment as S, CurvedSegment as C } from './TrackSegment.js'
+let V = require('./Vec.js');
+let {StraightSegment, CurvedSegment} = require('./TrackSegment.js');
+let S = StraightSegment;
+let C = CurvedSegment;
+
 let t1 = [];
 t1.push(new S(V(200,100),V(500,100)));
 t1.push(new S(V(200,200),V(500,200)));
@@ -10,4 +13,4 @@ t1.push(new S(V(200,400),V(500,400)));
 let tracks = [];
 tracks.push(t1);
 
-export default tracks;
+module.exports = tracks;
