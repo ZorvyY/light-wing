@@ -11,6 +11,7 @@ cd light-wing
 npm install
 node server/server.js
 ~~~~
+and navigate to localhost:3000.
 
 Note that in the current state, you have to have exactly 2 tabs open and connected. If the screen begins to flicker between different positions, restart the server and the two tabs should reconnect automatically.
 
